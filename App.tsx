@@ -34,9 +34,6 @@ export default function App() {
         <HomeStack.Screen
           name="Tab"
           component={TabNavigator}
-          // options={{
-          //   headerShown: false
-          // }}
         />
       </HomeStack.Navigator>
     </NavigationContainer>
