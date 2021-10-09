@@ -34,6 +34,9 @@ export default function App() {
         <HomeStack.Screen
           name="Tab"
           component={TabNavigator}
+          options={{
+            headerShown: false
+          }}
         />
       </HomeStack.Navigator>
     </NavigationContainer>
@@ -67,7 +70,7 @@ const HogeScreen: React.FC = () => {
 
 const TabNavigator: React.FC = () => {
   return (
-    <Tab.Navigator initialRouteName="Tab1" screenOptions={{headerShown: false}}>
+    <Tab.Navigator initialRouteName="Tab1">
       <Tab.Screen name="Tab1" component={Tab1Screen} />
       <Tab.Screen name="Tab2" component={Tab2Screen} />
       <Tab.Screen name="Tab3" component={Tab3Screen} />
