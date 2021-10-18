@@ -29,14 +29,6 @@ export const HogeScreen: React.FC = () => {
   );
 };
 
-export const FugaScreen: React.FC = () => {
-  return (
-    <View style={styles.container}>
-      <Text>FugaScreen</Text>
-    </View>
-  );
-};
-
 export const Tab1Screen: React.FC = () => {
   const navigation = useNavigation<RootStackNavProp<'Tab'>>();
 
